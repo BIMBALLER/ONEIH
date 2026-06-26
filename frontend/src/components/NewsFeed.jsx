@@ -6,7 +6,10 @@ export default function Newsfeed() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/news')
+    const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    console.log("Newsfeed component is fetching data from:", apiBase);
+
+    fetch(`${apiBase}/api/news`)
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch news data');
         return res.json();
@@ -40,7 +43,7 @@ export default function Newsfeed() {
 
         {error && (
           <div className="bg-amber-500/5 border border-amber-500/20 text-amber-800 p-4 rounded-xl text-sm">
-            Backend data connection resting. Verify your api server is awake on port 5000.
+            Backend data connection resting. Verify your api server is awake. (URL: {import.meta.env.VITE_API_URL || 'http://localhost:5000'})
           </div>
         )}
 
