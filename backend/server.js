@@ -14,6 +14,17 @@ const __dirname = path.dirname(__filename);
 app.use(cors());
 app.use(express.json());
 
+// 📂 NEW: Bulletproof absolute routing path finder for your images
+let imagesPath = path.join(__dirname, 'public', 'images');
+
+// If Render runs from root instead of the backend folder, auto-adjust the path
+if (!fs.existsSync(imagesPath)) {
+  imagesPath = path.join(__dirname, 'backend', 'public', 'images');
+}
+
+console.log("📂 System actively serving images from:", imagesPath);
+app.use('/images', express.static(imagesPath));
+
 // Fast shortcut to ignore browser favicon requests cleanly
 app.get('/favicon.ico', (req, res) => res.status(204).end());
 
