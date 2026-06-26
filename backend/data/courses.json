@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development & Software Engineering",
+    "courses": [
+      "Frontend Web Development (HTML, CSS, Tailwind)",
+      "Advanced React & Next.js Frameworks",
+      "Backend Systems (Node.js, Express, REST APIs)",
+      "Database Architecture & Deployment Pipelines"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Creative Design & UI/UX",
+    "courses": [
+      "UI/UX Design Foundations (Figma, Prototyping)",
+      "Wireframing & User Research Strategies",
+      "Visual Brand Identity & Corporate Graphics",
+      "Digital Asset & Vector Content Creation"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Business, Marketing & Strategy",
+    "courses": [
+      "Digital Marketing & Growth Hacking",
+      "Content Strategy & Social Media Management",
+      "Tech Entrepreneurship & Freelance Operations",
+      "Product Management & Workflow Frameworks"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Cybersecurity & Systems",
+    "courses": [
+      "Network Security & Ethical Hacking Basics",
+      "Information Assurance & Risk Assessments",
+      "System Administration & Security Protocols"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Advanced Emerging Tech",
+    "courses": [
+      "Internet of Things (IoT) & Smart Hardware",
+      "Embedded Systems Programming",
+      "Technical Subject Specializations"
+    ]
+  }
+]

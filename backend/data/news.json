@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Cohort 3 Professional Registrations Now Active",
+    "date": "June 2026",
+    "excerpt": "Secure your seat for our incoming immersive professional tech training program. Gain access to fast fiber internet, air-conditioned workspaces, and career placement mentors.",
+    "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "title": "ONE Hub Launches Dedicated Co-working Passes",
+    "date": "May 2026",
+    "excerpt": "Tech builders, remote workers, and freelancers in Offa can now access our high-speed internet and uninterrupted power facilities with flexible desk options.",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Tech Mixer: Networking Local Innovators with Global Fields",
+    "date": "April 2026",
+    "excerpt": "Highlights from our last developer meetups matching homegrown technical talents directly with startup pipelines across international hubs.",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Registration Deadline Extended for Cohort 3",
+    "date": "July 2026",
+    "excerpt": "Due to a surge in admissions requests across the Offa community, we have extended registration deadlines for our deep-dive software training tracks. Apply today to lock in your desk.",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
+  }
+]
