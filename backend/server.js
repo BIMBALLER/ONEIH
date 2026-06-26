@@ -10,8 +10,8 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Allow your frontend to communicate with the backend
-app.use(cors({ origin: 'http://localhost:5173' }));
+// Allow any frontend domain (like your local machine AND your live Vercel site) to access this API
+app.use(cors());
 app.use(express.json());
 
 // Fast shortcut to ignore browser favicon requests cleanly
@@ -47,7 +47,8 @@ app.get('/api/news', (req, res) => {
   }
 });
 
-const PORT = 5000;
+// Dynamic Port Allocation: Uses Render's port in production, or 5000 on your local machine
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`🚀 Backend server running on http://localhost:${PORT}`);
+  console.log(`🚀 Backend server running on port ${PORT}`);
 });
